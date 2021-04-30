@@ -1,0 +1,598 @@
+/*BODY - hover*/
+body {
+  font-size: 16px;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a:hover {
+  color: wheat;
+}
+
+body button {
+  border: none;
+}
+
+body button:hover {
+  color: wheat;
+  background-color: #f3f0f0;
+}
+
+/* GRID  */
+/* CONTAINER*/
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container1 {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*   flex */
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-direction {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*COMMON*/
+.one .second-one p, .two p, .three p, .four p, .five p, .six p, footer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #dad1d1;
+  padding: 1rem 0;
+}
+
+.two h3, .four h3, .five h3, .six h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.three h4 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+header {
+  background-color: transparent;
+  padding: 2rem 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+header h2 {
+  font-size: 2rem;
+  color: #161616;
+  font-weight: 700;
+}
+
+header a {
+  color: grey;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+/*ONE */
+.one {
+  height: auto;
+}
+
+.one .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 640px;
+      grid-template-rows: 640px;
+}
+
+.one .first-one {
+  background-image: url(/block-BHaacx/assets/media/home-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one .second-one {
+  background-color: #f5e3d7;
+  padding: 22% 1.5rem;
+}
+
+.one .second-one span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: grey;
+}
+
+.one .second-one h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.one .second-one em {
+  font-weight: 600;
+}
+
+.one .second-one button {
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border: 3px solid #161616;
+  background-color: transparent;
+  color: #161616;
+  border-radius: 20px;
+}
+
+/*TWO*/
+.two {
+  height: auto;
+}
+
+.two .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+}
+
+.two .two-two {
+  background-image: url(/block-BHaacx/assets/media/about-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.two .one-two {
+  padding: 1rem 1rem;
+}
+
+.two .one-two span {
+  color: #ecaf4e;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.two .three-two {
+  padding: 1rem 1rem;
+  background-color: #ecaf4e;
+}
+
+.two .three-two h3 {
+  color: white;
+}
+
+.two .three-two progress {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.two .three-two span {
+  color: #161616;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.two .three-two .per {
+  color: white;
+}
+
+/*THREE*/
+.three .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+}
+
+.three i {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.three .one-three {
+  padding: 2rem 0.5rem;
+  background-color: #ecaf4e;
+}
+
+.three .one-three h4 {
+  color: white;
+}
+
+.three .two-three {
+  padding: 2rem 0.5rem;
+  background-color: #fc683e;
+}
+
+.three .two-three h4 {
+  color: white;
+}
+
+.three .three-three {
+  padding: 2rem 0.5rem;
+  background-color: #161616;
+}
+
+.three .three-three h4 {
+  color: white;
+}
+
+.three .four-three {
+  padding: 2rem 0.5rem;
+  background-color: white;
+}
+
+.three .four-three i {
+  color: black;
+}
+
+/*FOUR*/
+.four .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 350px;
+      grid-template-rows: 350px;
+}
+
+.four h3 {
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.four p {
+  padding: 0;
+}
+
+.four i {
+  font-size: 50px;
+  color: white;
+}
+
+.four h5 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.four .box-four {
+  padding: 2rem 0 1rem 0;
+}
+
+.four .box-four .inbox-r-four {
+  margin-left: 2rem;
+}
+
+.four span {
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.four .one-four {
+  background-image: url(/block-BHaacx/assets/media/experience-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.four .two-four {
+  padding: 0.5rem 1rem;
+  background-color: #fc683e;
+}
+
+/*FIVE*/
+.five .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 350px;
+      grid-template-rows: 350px;
+}
+
+.five h3 {
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.five p {
+  padding: 0;
+}
+
+.five i {
+  font-size: 50px;
+  color: white;
+}
+
+.five h5 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.five .box-five {
+  padding: 2rem 0 1rem 0;
+}
+
+.five .box-five .inbox-r-five {
+  margin-left: 2rem;
+}
+
+.five span {
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.five .two-five {
+  background-image: url(/block-BHaacx/assets/media/education-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.five .one-five {
+  padding: 0.5rem 1rem;
+  background-color: #ecaf4e;
+}
+
+/*SIX*/
+.six .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 550px;
+      grid-template-rows: 550px;
+}
+
+.six h3 {
+  color: white;
+}
+
+.six p {
+  padding: 0;
+}
+
+.six h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.six i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.six a {
+  font-size: 1rem;
+  color: #ecaf4e;
+  padding: 1rem 0;
+}
+
+.six .phn-no {
+  color: grey;
+}
+
+.six .box-six {
+  padding: 1rem 0;
+}
+
+.six .two-six {
+  background-image: url(/block-BHaacx/assets/media/contact-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.six .one-six {
+  padding: 0.5rem 1rem;
+  background-color: #fc683e;
+}
+
+.six .three-six {
+  background-color: #161616;
+  padding: 0.5rem 1rem;
+}
+
+.six .form-form {
+  padding: 1rem 0;
+  width: 90%;
+}
+
+.six .form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  background-color: transparent;
+  font-weight: 500;
+  border: none;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ecaf4e;
+}
+
+.six .form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+.six .form-control:-ms-input-placeholder {
+  color: white;
+}
+
+.six .form-control::-ms-input-placeholder {
+  color: white;
+}
+
+.six .form-control::placeholder {
+  color: white;
+}
+
+.six button {
+  color: grey;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0.6rem 8rem;
+}
+
+/*SEVEN*/
+.seven {
+  padding: 2rem 0;
+  background-color: #fc683e;
+}
+
+.seven iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/*FOOTER*/
+footer {
+  height: 20vh;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+footer p em {
+  color: #ecaf4e;
+}
+
+footer p i {
+  padding: 0;
+}
+
+footer i {
+  padding: 0.5rem 1rem;
+}
+
+footer .footer {
+  margin: 5% 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.3;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

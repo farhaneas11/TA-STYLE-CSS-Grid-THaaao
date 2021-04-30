@@ -1,0 +1,377 @@
+/*COMMON*/
+%p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(218, 209, 209);
+    padding: 1rem 0;
+}
+%h3{
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+%h4{
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+
+
+header{    
+    background-color: transparent;
+    padding: 2rem 1rem;    
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    h2{
+        
+        font-size: 2rem;
+        color: $black;
+        font-weight: 700;
+    }        
+    a{        
+        color: grey;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 2rem;       
+    }
+    
+}
+
+/*ONE */
+.one{
+    height: auto;    
+    .grid{
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 640px;
+    }
+    .first-one{
+        background-image: url(/block-BHaacx/assets/media/home-img.jpg);
+        background-repeat: no-repeat;       
+        background-size:cover;
+    }
+    .second-one{
+        background-color: $first;
+        padding: 22% 1.5rem;
+        span{
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: grey;
+        }
+        h1{
+            font-size: 2.8rem;
+            font-weight: 500;
+        }
+        em{
+            font-weight: 600;
+        }
+        p{
+            @extend %p;
+        }
+        button{
+            margin-top: 2rem;
+            font-size: 1rem;
+            padding: 0.5rem 1.5rem;
+            font-weight: 600;
+            border: 3px solid $black;
+            background-color: transparent;
+            color: $black;
+            border-radius: 20px;
+        }
+    }
+}
+/*TWO*/
+.two{
+    height: auto;
+    h3{
+        @extend %h3;
+    }
+    p{
+        @extend %p;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows:400px ;
+    }
+    .two-two{
+        background-image: url(/block-BHaacx/assets/media/about-img.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: center;       
+    }
+    .one-two{
+        padding: 1rem 1rem;
+        span{
+            color: $primary;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    .three-two{
+        padding: 1rem 1rem;
+        background-color: $primary;
+        h3{
+            color: white;
+        }
+        progress{
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        span{
+            color: $black;
+            font-weight: 700;
+            font-size: 1rem;
+            
+        }        
+        .per{
+              color: $white;  
+        }
+    }
+}
+/*THREE*/
+.three{
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 300px;
+    }
+    i{
+        font-size: 3.5rem;
+        color: white;
+    }
+    h4{
+        @extend %h4;
+    }
+    p{
+        @extend %p;
+    }
+    .one-three{
+        padding: 2rem 0.5rem;
+        background-color: $primary;
+        h4{
+            color: white;
+        }
+    }
+    .two-three{
+        padding: 2rem 0.5rem;
+        background-color: $secondary;
+        h4{
+            color: white;
+        }
+    }
+    .three-three{
+        padding: 2rem 0.5rem;
+        background-color: $black;
+        h4{
+            color: white;
+        }
+    }
+    .four-three{
+        padding: 2rem 0.5rem;
+        background-color: $white;
+        i{
+            color: black;
+        }
+    }
+}
+/*FOUR*/
+.four{
+    .grid{
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 350px;
+    }
+    h3{
+        @extend %h3;
+        padding:0.5rem 0;
+        color: $white
+    }
+    p{
+        @extend %p;
+        padding: 0;
+    }  
+    i{
+        font-size: 50px;
+        color: $white;
+    }
+    h5{
+        font-size: 1.5rem;
+        color: $white;
+        font-weight: 500;
+    }
+    .box-four{
+        padding: 2rem 0 1rem 0;
+        .inbox-r-four{
+            margin-left: 2rem;
+        }
+    }
+    span{
+        color: black;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: inline-block;
+    }
+    .one-four{
+        background-image: url(/block-BHaacx/assets/media/experience-img.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;  
+    }
+    .two-four{
+        padding:0.5rem 1rem ;
+        background-color: $secondary;
+    }
+}
+/*FIVE*/
+.five{
+    .grid{
+        display: grid;
+        grid-template-columns:50% 50%;
+        grid-template-rows: 350px;
+    }
+    h3{
+        @extend %h3;
+        padding:0.5rem 0;
+        color: $white
+    }
+    p{
+        @extend %p;
+        padding: 0;
+    }  
+    i{
+        font-size: 50px;
+        color: $white;
+    }
+    h5{
+        font-size: 1.5rem;
+        color: $white;
+        font-weight: 500;
+    }
+    .box-five{
+        padding: 2rem 0 1rem 0;
+        .inbox-r-five{
+            margin-left: 2rem;
+        }
+    }
+    span{
+        color: black;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: inline-block;
+    }
+    .two-five{
+        background-image: url(/block-BHaacx/assets/media/education-img.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;  
+    }
+    .one-five{
+        padding:0.5rem 1rem ;
+        background-color: $primary;
+    }
+}
+/*SIX*/
+.six{
+    .grid{
+        display: grid;
+        grid-template-columns:2fr 1fr 1fr;
+        grid-template-rows: 550px;
+    }
+    h3{
+        @extend %h3;
+        color: $white;
+    }
+    p{
+        @extend %p;
+        padding: 0;
+    }
+    h5{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        padding: 0.5rem 0;
+    }
+    i{
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    a{
+        font-size: 1rem;
+        color: $primary;
+        padding: 1rem 0;
+    }
+    .phn-no{
+        color: grey;
+    }
+    .box-six{
+        padding: 1rem 0;
+    }
+    .two-six{
+        background-image: url(/block-BHaacx/assets/media/contact-img.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;  
+        background-position: center;
+    }
+    .one-six{
+        padding:0.5rem 1rem ;
+        background-color: $secondary;
+    }
+    .three-six{
+        background-color: $black;
+        padding:0.5rem 1rem ;
+    }
+    .form-form{
+        padding: 1rem 0;
+        width: 90%;
+    }
+    .form-control{
+        width: 100%;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        background-color: transparent;
+        font-weight: 500;
+        border: none;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $primary;        
+        &::placeholder{
+            color: white;
+        }
+    }
+    button{
+        color: grey;
+        background-color: white;
+        border-radius: 25px;
+        padding: 0.6rem 8rem;
+    }
+}
+/*SEVEN*/
+.seven{
+    padding: 2rem 0;
+    background-color: $secondary;
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+}
+/*FOOTER*/
+footer{
+    height: 20vh;    
+    p{
+        @extend %p;
+        font-size: 0.9rem;
+        color: grey;
+        em{
+            color: $primary;
+        }
+        i{
+            padding:0;
+        }
+    }
+    i{
+        padding: 0.5rem 1rem;
+    }
+    .footer{
+        margin: 5% 0;
+    }
+}
